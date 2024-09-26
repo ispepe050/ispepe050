@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding=UTF-8"?>
+
+<loquequiera>
+En serio
+</loquequiera>
+
+<fontSize>12</fontSize>
+<fontFamily>Arial</fontFamily>
+<<fontStyle>Normal</fontStyle>
+
+<colors>
+<color>
+    <name>Color1</name>
+    <value>#FF0000</value>
+</color>
+<color>
+    <name>Color2</name>
+    <value>#00FF00</value>
+</color>
+
+</colors>
