@@ -13,6 +13,7 @@
 <body>
     <a href="index.html"> 🏡 </a>
     <a href="listas.html"> ⬅️ </a>
+    <a href="horario.html"> ➡️ </a>
 
     <p>Hola</p>
     <table border="2" bgcolor="pink" align="center">
@@ -54,6 +55,90 @@
         <td>🚗</td>
         <td></td>
         </tr>
+    </table>
+
+    <table>
+        <thead>
+            <!--Fila encabezado-->
+        </thead>
+        <tbody>
+            <!--Fila cuerpo-->
+        </tbody>
+        <tfoot>
+            <!--Fila de pie-->
+        </tfoot>
+    </table>
+
+    <hr/>
+
+    <h3>Tablas semánticas</h3>
+
+    <table border="1" align="center" bgcolor="cae9ff">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>José</td>
+                <td>20</td>
+            </tr>
+                <td>Luis</td>
+                <td>19</td>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>49</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr/>
+
+    <h3>Combinación de celdas en tablas</h3>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th colspan="2">Información</th>
+            </tr>
+            <tr>
+                <th>Docente</th>
+                <th>Materias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">José</td>
+                <td>Programación Web</td>
+            </tr>
+            <td>Fundamentos de Investigación</td>
+        </tbody>
+    </table>
+
+    <hr/>
+
+    <h3>Tabla de colores</h3>
+    <table border="1" align="center">
+            <tr>
+                <th bgcolor="green" colspan="3"> 1</th>
+                <th bgcolor="purple" rowspan="3"> 4</th>
+            </tr>
+            <tr>
+                <th bgcolor="blue" colspan="2">2</th>
+                <th bgcolor="yellow">3</th>
+            </tr>
+
+            <tr>
+                <th bgcolor="pink">5</th>
+                <th bgcolor="red">6</th>
+                <th  bgcolor="orange">7</th>
+            </tr>
     </table>
 
 </body>
