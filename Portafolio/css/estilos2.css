@@ -1,6 +1,8 @@
+/*
 * {
     color: rgb(186, 39, 39);
 }
+    */
 
 h1 {
     color:rgb(0, 42, 255)
@@ -34,4 +36,90 @@ input[type="text"]:focus {
 
 p::first-line {
     font-family: monospace;
+}
+
+div [class~="azul"] {
+    color: blue !important;
+}
+
+html[lang|="es"] {
+    font-family: "Arial", sans-serif;
+}
+
+a[href^="https://"] {
+    color: orange;
+}
+
+img[src$=".png"] {
+    border: 3px solid red;
+}
+
+[title*="plan"] {
+    color: green;
+}
+
+a:hover {
+    color: red;
+    rotate: 20deg ;
+}
+
+button:active {
+    background-color: rgb(67, 128, 225);
+}
+
+input:focus {
+    background: olivedrab;
+}
+
+input:checked {
+    background-color: rgb(132, 94, 167) ;
+}
+
+input:disabled {
+    background-color: grey;
+    color: white;
+}
+
+#parrafos p:first-child {
+    background-color: aquamarine;
+    
+}
+
+#parrafos p:last-child {
+    background-color: greenyellow;
+    
+}
+
+#parrafos p:nth-child(3) {
+    font-weight: bold;
+}
+
+#parrafos p:nth-child(even) {
+    text-decoration: underline;
+}
+
+#parrafos p:nth-child(odd)::first-letter {
+    font-size: 24px;
+}
+
+blockquote::before {
+    content: "Cita: ";
+    font-weight: bold;
+}
+
+blockquote::after {
+    content: "🐶";
+    border: 2px solid burlywood;
+}
+
+ul li::marker {
+    content: "🏎️";
+}
+
+ul li ul li::marker {
+    content: "🛒";
+}
+
+ul li ul li ul li::marker {
+    content: "🚙";
 }
