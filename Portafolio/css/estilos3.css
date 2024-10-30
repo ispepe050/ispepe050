@@ -1,0 +1,156 @@
+/*
+-Hacer un kitchen sink personalizado
+
+*Solo usar los colores de a paleta y b/n (7 colores).
+*20 paquetes de reglas mínimo, todos verse aplicados.
+*En un kitchen-sink diferente [2].
+*Usar al menos 2 tipografías.
+*/
+/* 
+Colores:
+#321325
+#5F0F40
+#9A031E
+#CB793A
+#FCDC4D
+#FFFFFF
+#000000
+*/
+
+/*Parrafos y h's*/
+#titulo {
+    font-size: 70px;
+    text-align: center;
+}
+
+h1 {
+    color: #321325;
+    background-color: #FCDC4D;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p::first-letter,
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter,
+h6::first-letter {
+    font-size: 40px;
+}
+
+
+h2, h3, h4, h5, h6, p {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+p {
+    background-color: #FCDC4D;
+    color: #321325;
+    padding: 10px;
+    border-radius: 5px;
+}
+a {
+    color: #CB793A;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #9A031E;
+}
+
+hr {
+    font-family: monospace;
+    background-color: #5F0F40;
+    height: 10px;
+
+    border-width: 0px;
+}
+
+/*Botones*/
+
+button {
+    background-color: #CB793A;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: #9A031E;
+}
+
+/*Tablas*/
+table {
+    width: 100%;
+}
+th, td {
+    border: 1px solid #5F0F40;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #5F0F40;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-type: square;
+    color: #321325;
+}
+
+
+/*Imágenes y inputs*/
+
+img {
+    border: 5px solid #5F0F40;
+    box-shadow: 0px 4px 8px black;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    border: 2px solid #9A031E;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    border-color: #5F0F40;
+}
+
+input[type] {
+    background-color: #CB793A;
+}
+
+code {
+    background-color: #000000;
+    color: #FCDC4D;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+blockquote {
+    background-color: #5F0F40;
+    color: #321325;
+    padding: 15px;
+    border-left: 5px solid #5F0F40;
+    font-style: italic;
+}
+
+blockquote::after {
+    content: "🤖";
+    border: 2px solid burlywood;
+}
+
+footer {
+    background-color: #5F0F40;
+    color: #FCDC4D;
+    padding: 15px;
+    text-align: center;
+}
