@@ -24,3 +24,21 @@ let salida_input = document.getElementById("salida_teclado");
 nombreTxt.addEventListener("keydown", function(event){
     salida_teclado.innerHTML = `Se presionó <kbd> ${event.key} </kbd>`;
 });
+
+let miForm = document.getElementById("miForm");
+
+miForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+ //   alert("Se intentó procesar")
+ let aTxt = document.getElementById("a");
+ let bTxt = document.getElementById("b");
+ //console.log(aTxt, bTxt)
+ let salida = document.getElementById("salida_suma");
+
+ let a = parseInt(aTxt.value);
+ let b = parseInt(bTxt.value);
+
+ let resultado = a + b;
+ salida.innerText = resultado;
+});
