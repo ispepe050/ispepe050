@@ -33,7 +33,7 @@
         </li>
         <li>
             <a href="https://github.com/ispepe050"> 
-                <h4>Jose Angel Torres Hernández</h4>
+                <h4>Jose Angel Torres Hernandez</h4>
             </a>
         </li>
         <li>
