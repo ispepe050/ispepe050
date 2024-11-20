@@ -26,8 +26,14 @@ let repetidor = setInterval(() => {
     lista.appendChild(registro("Cada 1.5 seg"))
 }, 1500);
 
+function iniciarRepetidor() {
+    repetidor = setInterval(() => {
+        lista.appendChild(registro("Cada 1.5 seg"));
+    }, 1500);
+}
+
 let activaTimerBtn = document.getElementById("activaTimer");
-let stopBtn = document.getElementById("pararRepetidor");
+let stopBtn = document.getElementById("pararReptidor");
 
 activaTimerBtn.addEventListener("click", function(){
     lista.appendChild(registro("Inicia timer..."));
@@ -40,4 +46,17 @@ stopBtn.addEventListener("click", function(){
     clearInterval(repetidor);
 })
 
+let reanudarBtn = document.getElementById("reanudarRepetidor");
+reanudarBtn.addEventListener("click", function() {
+    lista.appendChild(registro("Reanudar repetidor"));
+    iniciarRepetidor();
+});
 
+let secure = document.getElementById("secure");
+
+
+if (location.protocol == "https:") {
+  secure.innerText = "Seguro"; 
+} else {
+  secure.innerText = "No seguro";
+}
