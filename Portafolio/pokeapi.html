@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pokeAPI</title>
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
-  >
-  <style>
-    dt{
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
+    />
+    <style>
+      dt {
         font-weight: bolder;
-    }
-  </style>
+      }
+    </style>
 
     <script src="js/pokeapi.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/estilos2.css">
+  </head>
+  <body>
     <a href="index.html"> 🏡 </a>
     <a href="objetos2.html"> ⬅️ </a>
 
-
     <main class="container">
-        <h1>pokeAPI</h1>
+      <h1>pokeAPI</h1>
 
-        <article>
-            <dl>
-                <dt>Nombre</dt>
-                <dd id="pokemon-name"></dd>
-                <dt>Tipos</dt>
-                <dd id="pokemon-types"></dd>
-                <dt>Imagen</dt>
-                <dd><img id="pokemon-image" src="" alt="N/A"></dd>
-            </dl>
-        </article>
+      <article>
+        <form id="pokemon-search-form">
+          <input
+            type="text"
+            id="pokemon-search"
+            placeholder="Busca un Pokémon"
+            required
+          />
+          <button type="submit">Buscar</button>
+        </form>
+
+        <dl>
+          <dt>Nombre</dt>
+          <dd id="pokemon-name"></dd>
+          <dt>Tipos</dt>
+          <dd id="pokemon-types"></dd>
+          <dt>Imagen</dt>
+          <dd><img id="pokemon-image" src="" alt="N/A" /></dd>
+          <dt>Ataque Especial</dt>
+          <dd id="pokemon-special-attack"></dd>
+          <dt>Peso</dt>
+          <dd id="pokemon-weight"></dd>
+          <dt>Altura</dt>
+          <dd id="pokemon-height"></dd>
+          <dt>Habilidad Principal</dt>
+          <dd id="pokemon-main-ability"></dd>
+          <dt>Habilidades</dt>
+          <dd id="pokemon-abilities"></dd>
+          <dd>
+            <audio id="pokemon-sound" controls hidden></audio>
+          </dd>
+        </dl>
+        <p id="error-message" style="color: red; font-weight: bold"></p>
+      </article>
     </main>
-
-
-</body>
+  </body>
 </html>
