@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Tarjetas Crédito</title>
+    <link rel="stylesheet" href="css/estilos4.css" />
+  </head>
+  <body>
+    <a href="index.html"> 🏡 </a>
+    <a href="pokeapi.html"> ⬅️ </a>
+
+    <main class="container">
+      <h1>API Tarjetas Crédito </h1>
+
+      <article>
+        <button id="fetch-card">Obtener Tarjeta</button>
+        <dl>
+          <dt>Tipo de Tarjeta</dt>
+          <dd id="card-type"></dd>
+          <dt>Número de Tarjeta</dt>
+          <dd id="card-number"></dd>
+          <dt>Fecha de Expiración</dt>
+          <dd id="card-expiration"></dd>
+          <dt>Propietario</dt>
+          <dd id="card-owner"></dd>
+        </dl>
+        <p id="error-message"></p>
+      </article>
+    </main>
+
+    <script src="js/random_api.js" defer></script>
+  </body>
+</html>
