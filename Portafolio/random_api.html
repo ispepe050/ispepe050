@@ -11,10 +11,12 @@
     <a href="pokeapi.html"> ⬅️ </a>
 
     <main class="container">
-      <h1>API Tarjetas Crédito </h1>
+      <h1>API Tarjetas Crédito</h1>
 
       <article>
         <button id="fetch-card">Obtener Tarjeta</button>
+        <button id="fetch-multiple-cards">Obtener Varias Tarjetas</button>
+        <button id="clear-data">Limpiar Todo</button>
         <dl>
           <dt>Tipo de Tarjeta</dt>
           <dd id="card-type"></dd>
@@ -25,6 +27,7 @@
           <dt>Propietario</dt>
           <dd id="card-owner"></dd>
         </dl>
+        <ul id="card-list"></ul>
         <p id="error-message"></p>
       </article>
     </main>
